@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionbarT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cfcfcf"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/Base.Theme.AppCompat.CompactMenu" >
+
+        <RelativeLayout
+            android:id="@+id/toolbarmenucontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#cfcfcf"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/facetune" />
+
+           <TextView
+               android:id="@+id/company_name"
+               android:text="@string/whiten"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#4e4e4e"
+               android:textSize="@dimen/abc_text_size_headline_material"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/logo"
+               android:layout_toEndOf="@+id/logo"
+               android:paddingLeft="20dp" />
+
+            <ImageButton
+                android:id="@+id/checkimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#cfcfcf"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/check"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionbarB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cfcfcf"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/Base.Theme.AppCompat.CompactMenu"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/bottomtoolbarmenucontainer"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.03">
+
+            <ImageButton
+                android:id="@+id/movebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#cfcfcf"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/move"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/movetxt"
+                android:layout_alignStart="@+id/movetxt" />
+
+            <TextView
+                android:id="@+id/movetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Move"
+                android:textColor="#000000"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_below="@+id/movebtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/whitenbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#cfcfcf"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/toothbrush"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/erasebtn"
+                android:layout_toStartOf="@+id/erasebtn"
+                android:layout_marginRight="77dp"
+                android:layout_marginEnd="77dp" />
+
+
+            <TextView
+                android:id="@+id/whitentxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whiten"
+                android:textColor="#000000"
+                android:layout_below="@+id/whitenbtn"
+                android:layout_alignLeft="@+id/whitenbtn"
+                android:layout_alignStart="@+id/whitenbtn" />
+
+            <ImageButton
+                android:id="@+id/erasebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#cfcfcf"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/erase"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/helpbtn"
+                android:layout_marginRight="62dp"
+                android:layout_marginEnd="62dp" />
+
+            <TextView
+                android:id="@+id/erasetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erase"
+                android:layout_below="@+id/erasebtn"
+                android:layout_toRightOf="@+id/whitenbtn"
+                android:layout_toEndOf="@+id/whitenbtn"
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/helpbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#cfcfcf"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/question"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="29dp"
+                android:layout_marginEnd="29dp" />
+
+            <TextView
+                android:id="@+id/helptxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="#000000"
+                android:layout_alignBaseline="@+id/erasetxt"
+                android:layout_alignBottom="@+id/erasetxt"
+                android:layout_toRightOf="@+id/erasebtn"
+                android:layout_toEndOf="@+id/erasebtn" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
