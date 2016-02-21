@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.toolbarshw.MainActivity">
+    <item
+        android:id="@+id/action_Pocketcasts"
+        android:orderInCategory="100"
+        android:title="Pocketcasts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Ted"
+        android:orderInCategory="100"
+        android:title="Ted"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Pandora"
+        android:orderInCategory="100"
+        android:title="Pandora"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Facetune"
+        android:orderInCategory="100"
+        android:title="Facetune"
+        app:showAsAction="never" />
+
+</menu>

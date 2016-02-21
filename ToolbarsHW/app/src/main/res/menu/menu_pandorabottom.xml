@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.toolbarshw.PandoraActivity">
+    <item
+        android:id="@+id/action_pandoraDialog"
+        android:title="dialog"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_email"/>
+    <item
+        android:id="@+id/action_pandoraFriend"
+        android:title="friend"
+        app:showAsAction="always"
+        android:icon="@android:drawable/stat_sys_headset"/>
+    <item
+        android:id="@+id/action_pandoraSettings"
+        android:title="settings"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_set_as"/>
+
+</menu>

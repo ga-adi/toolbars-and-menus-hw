@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.toolbarshw.TedActivity">
+
+    <item
+        android:id="@+id/action_TedShare"
+        android:title="share"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_TedBookmark"
+        android:title="bookmark"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_set_as"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_TedSave"
+        android:title="bookmark"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_save"
+        app:showAsAction="always" />
+
+</menu>

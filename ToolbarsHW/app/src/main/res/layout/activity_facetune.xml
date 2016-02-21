@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.todo.toolbarshw.FacetuneActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/xmlFaceActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="#dedddd"
+        android:elevation="4dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xmlFaceActionBar"
+        android:src="@drawable/facetuneimageview"
+        android:scaleType="centerCrop"
+        android:elevation="0dp"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/xmlFaceToolbarBottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="#dedddd"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
