@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.toolbarshw.PocketcastsActivity">
+
+    <item
+        android:id="@+id/action_PocketcastsTopCast"
+        android:title="casttoscreen"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_camera"/>
+    <item
+        android:id="@+id/action_PocketcastsTopAdd"
+        android:title="add"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:id="@+id/action_PocketcastsTopOverflow"
+        android:title="overflowoption"
+        app:showAsAction="never"/>
+
+</menu>

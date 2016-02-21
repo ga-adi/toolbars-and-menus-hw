@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.toolbarshw.MainActivity">
+
+    <item
+        android:id="@+id/action_facemove"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/facetune1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_facewhiten"
+        android:orderInCategory="200"
+        android:title=""
+        android:icon="@drawable/facetune2"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_faceerase"
+        android:orderInCategory="300"
+        android:title=""
+        android:icon="@drawable/facetune3"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_facehelp"
+        android:orderInCategory="400"
+        android:title=""
+        android:icon="@drawable/facetune4"
+        app:showAsAction="always" />
+</menu>
