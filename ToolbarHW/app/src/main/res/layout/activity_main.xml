@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ra.toolbarhw.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#f9f8f8"
+        android:layout_gravity="bottom"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:src="@drawable/ic_action_arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/action_albumart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tedlogo"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/backbutton"
+                android:layout_toEndOf="@+id/backbutton" />
+
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:src="@android:drawable/ic_menu_share"
+                android:layout_width="wrap_content"
+                android:background="#000000"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/bookmark"
+                android:layout_toStartOf="@+id/bookmark" />
+            <ImageView
+                android:id="@+id/bookmark"
+                android:src="@drawable/ic_action_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:layout_toLeftOf="@+id/action_pause_button"
+                android:layout_toStartOf="@+id/action_pause_button" />
+            <ImageView
+                android:id="@+id/action_pause_button"
+                android:src="@drawable/ic_action_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to FACETUNE"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
