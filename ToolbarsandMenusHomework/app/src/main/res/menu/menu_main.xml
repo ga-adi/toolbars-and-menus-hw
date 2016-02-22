@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/action_navigation_drawer"
+        android:icon="@android:drawable/menu_frame"
+        android:title="Navigation_drawer"
+        app:showAsAction="always"/> -->
+
+    <item
+        android:id="@+id/action_tv_wifi"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Tv_wifi"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_plus"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Plus"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Settings"
+        app:showAsAction="always"/>
+
+</menu>
