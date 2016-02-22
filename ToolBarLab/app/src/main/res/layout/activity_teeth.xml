@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.williamtygret.toolbarlab.TeethActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_toolbar"/>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/bottom_toolbar"
+        android:background="#c1c0c2"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButtonGreen"
+        android:background="#42ad40"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/bottom_toolbar"
+        android:layout_toStartOf="@+id/imageButtonRed"
+        android:layout_marginEnd="44dp"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButtonRed"
+        android:background="#db1828"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButtonYell"
+        android:background="#eb9b38"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="47dp"
+        android:layout_alignBottom="@+id/bottom_toolbar"
+        android:layout_toEndOf="@+id/imageButtonBlue"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButtonBlue"
+        android:background="#18666f"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/bottom_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"/>
+
+
+</RelativeLayout>
