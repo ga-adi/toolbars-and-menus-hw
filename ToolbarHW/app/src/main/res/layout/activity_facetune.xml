@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adi.ho.jackie.toolbarhw.FacetuneActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/facetune_top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <ImageView
+            android:id="@+id/facetune_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+        <TextView
+            android:id="@+id/facetune_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whiten" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/facetune_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <LinearLayout
+                android:id="@+id/move"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                >
+                <ImageView android:id="@+id/move_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/moveicon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Move"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/whiten"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+                <ImageView android:id="@+id/whiten_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/toothbrush"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whiten"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/erase"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+                <ImageView android:id="@+id/erase_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/eraser"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erase"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+                <ImageView android:id="@+id/help_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/ic_menu_help"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Help"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
