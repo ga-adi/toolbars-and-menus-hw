@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         final ImageButton playPauseButton = (ImageButton) findViewById(R.id.play_pause);
         ImageButton skipButton = (ImageButton) findViewById(R.id.skip);
 
+        ImageButton moveButton = (ImageButton) findViewById(R.id.move);
+        ImageButton whiteButton= (ImageButton) findViewById(R.id.brush);
+        ImageButton eraseButton = (ImageButton) findViewById(R.id.erase);
+        ImageButton helpButton = (ImageButton) findViewById(R.id.help);
+
         mPauseFlag = true;
 
         thumbsDownButton.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +59,35 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Skip", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        moveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Move", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        whiteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Whiten", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        eraseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Erase", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Help", Toast.LENGTH_SHORT).show();
             }
         });
     }
