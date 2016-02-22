@@ -9,20 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.roberrera.toolbars_and_menus_hw.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.example.roberrera.toolbars_and_menus_hw.TedActivity"
+    tools:showIn="@layout/activity_ted">
 
-    <TextView
-        android:id="@+id/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-    <Button
-        android:id="@+id/button_toTed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To TED Activity"
-        android:layout_below="@id/hello_world"
-        />
 </RelativeLayout>

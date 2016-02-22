@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.roberrera.toolbars_and_menus_hw.Ted">
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_share"/>
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:orderInCategory="100"
+        android:title="Bookmark"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_bookmark_border"/>
+
+    <item
+        android:id="@+id/action_download"
+        android:orderInCategory="100"
+        android:title="Bookmark"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_file_download"/>
+
+
+</menu>
