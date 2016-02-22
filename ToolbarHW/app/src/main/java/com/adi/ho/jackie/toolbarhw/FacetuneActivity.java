@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -32,22 +34,28 @@ public class FacetuneActivity extends AppCompatActivity {
         LinearLayout whitenLayout = (LinearLayout) findViewById(R.id.whiten);
         LinearLayout eraseLayout = (LinearLayout) findViewById(R.id.erase);
         LinearLayout helpLayout = (LinearLayout) findViewById(R.id.help);
+
+        final Animation rotateAnimation = AnimationUtils.loadAnimation(FacetuneActivity.this, R.anim.facetune_rotate);
+
         moveLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toolbarText.setText("Move");
+                toolbarText.startAnimation(rotateAnimation);
             }
         });
         whitenLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toolbarText.setText("Whiten");
+                toolbarText.startAnimation(rotateAnimation);
             }
         });
         eraseLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toolbarText.setText("Erase");
+                toolbarText.startAnimation(rotateAnimation);
             }
         });
         helpLayout.setOnClickListener(new View.OnClickListener() {
