@@ -1,0 +1,15 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wasabi.toolbarhomework.RelatedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Pikachu (Japanese: ピカチュウ?) are a species of Pokémon, fictional creatures that appear in an assortment of video games, animated television shows and movies, trading card games, and comic books licensed by The Pokémon Company, a Japanese corporation. The Pikachu design was conceived by Ken Sugimori. Pikachu first appeared in Pokémon Red and Green in Japan, and later in the first internationally released Pokémon video games, Pokémon Red and Blue, for the original Game Boy.
+
+Like other species of Pokémon, Pikachu are often captured and groomed by humans to fight other Pokémon for sport. Pikachu are one of the most well-known varieties of Pokémon, largely because a Pikachu is a central character in the Pokémon anime series. Pikachu is regarded as a major character of the Pokémon franchise as well as its mascot, and has become an icon of Japanese pop culture in recent years." />
+
+</ScrollView>
