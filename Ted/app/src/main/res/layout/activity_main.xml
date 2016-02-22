@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farazfazli.ted.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:titleTextColor="@android:color/holo_red_dark"
+        android:subtitleTextColor="@android:color/holo_red_dark"
+        android:background="#e0e0e0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TED"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/textView2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="<"
+        android:textSize="30sp"
+        android:layout_alignLeft="@+id/toolbar"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:layout_alignParentTop="false"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:src="@android:drawable/stat_sys_download"
+        android:tint="#424242"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView2"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookmark"
+        android:src="@android:drawable/ic_menu_report_image"
+        android:tint="#424242"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/save"
+        android:layout_toStartOf="@+id/save"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        android:src="@android:drawable/ic_menu_share"
+        android:tint="#424242"
+        android:layout_alignBottom="@+id/bookmark"
+        android:layout_toLeftOf="@+id/bookmark"
+        android:layout_toStartOf="@+id/bookmark"/>
+
+</RelativeLayout>
