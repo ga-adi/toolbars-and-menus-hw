@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/action_thumbsdown"
+    android:icon="@drawable/thumbsdown"
+    android:title="thumbs down"
+    app:showAsAction="always"/>
+    <item android:id="@+id/action_thumbsupbot"
+        android:icon="@drawable/thumbsup"
+        android:title="thumbs up"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_playpause"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="play"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_fastforward"
+        android:icon="@android:drawable/ic_media_ff"
+        android:title="fastforward"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_comment"
+        android:icon="@drawable/comment"
+        android:title="Comments"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_friends"
+        android:icon="@drawable/friends"
+        android:title="Friend list"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>
